@@ -1,4 +1,9 @@
-n,m=map(int,input().split())
+import sys
 
-print(int(n//m))
-print(n%m)
+input=sys.stdin.readline
+
+x,y,w,h=map(int,input().split())
+
+list=[x,y,w-x,h-y]
+
+print(min(list))
